@@ -10,11 +10,10 @@ public class Employee {
     private int department;
     public int id;
 
-    public Employee(String name, int department) {
+    public Employee(String name, int department, int employeeSalary) {
         this.name = name;
         this.department = department;
-        int salary = 50_000 + (int) (Math.random() * 100_000);
-        this.employeeSalary = employeeSalary + salary;
+        this.employeeSalary = employeeSalary;
         this.id = idCounter++;
     }
 

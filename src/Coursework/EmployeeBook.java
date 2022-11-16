@@ -163,13 +163,13 @@ public class EmployeeBook {
     }
 
     // 4.a. Добавить нового сотрудника. (Очень сложно)
-    public void createEmployee(String name, int department) {
+    public void createEmployee(String name, int department, int employeeSalary) {
         int index = searchingEmptyIndex();
         if (index == -1) {
             System.out.println(" Невозможно! Штат отдела полный");
             return;
         }
-        employeeStorage3[index] = new Employee(name, department);
+        employeeStorage3[index] = new Employee(name, department, employeeSalary);
     }
 
     private int searchingEmptyIndex() {
