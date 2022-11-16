@@ -66,7 +66,8 @@ public class Averagelevel {
                 allEmployeesInDep++;
             }
         }
-        return salaryCounterInDep / allEmployeesInDep;
+        allEmployeesInDep = salaryCounterInDep / allEmployeesInDep;
+        return allEmployeesInDep;
     }
 
     // 2.e. Индексация зарплат всех сотрудников отдела
